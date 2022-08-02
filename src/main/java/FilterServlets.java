@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-@WebFilter(value = {"/add"})
+@WebFilter(value = {"/add", "/delete", "/update", "/get"})
 public class FilterServlets implements Filter {
 
     @Override
