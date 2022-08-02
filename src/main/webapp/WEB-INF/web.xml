@@ -14,7 +14,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>delete</servlet-name>
-        <servlet-class>Delete</servlet-class>
+        <servlet-class>DeleteUser</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>delete</servlet-name>
@@ -22,18 +22,18 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>update</servlet-name>
-        <servlet-class>Update</servlet-class>
+        <servlet-class>UpdateUser</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>update</servlet-name>
         <url-pattern>/update</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>getusers</servlet-name>
+        <servlet-name>get</servlet-name>
         <servlet-class>GetUsers</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>getusers</servlet-name>
+        <servlet-name>get</servlet-name>
         <url-pattern>/get</url-pattern>
     </servlet-mapping>
 

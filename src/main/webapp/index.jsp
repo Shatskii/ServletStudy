@@ -18,16 +18,16 @@
 
         <li>Возраст: <c:out value="${user.age}"/></li>
 
-        <li>Идентификационный номер: <c:out value="${user.id}"/></li>
+        <li>Id: <c:out value="${user.id}"/></li>
 
-        <form method="post" action="<c:url value='/delete'/>">
+        <form method="post" action="<c:url value="/delete"/>">
             <input type="number" hidden name="id" value="${user.id}"/>
             <input type="submit" name="delete" value="Удалить"/>
         </form>
 
-        <form method="get" action="<c:url value='/update'/>">
+        <form method="get" action="<c:url value="/update"/>">
             <input type="number" hidden name="id" value="${user.id}"/>
-            <input type="submit" value="Редактированть"/>
+            <input type="submit" value="Редактировать"/>
         </form>
     </ul>
     <hr/>
@@ -36,7 +36,7 @@
 
 <h2>Создание нового пользователя</h2><br/>
 
-<form method="post" action="<c:url value='/add'/>">
+<form method="post" action="<c:url value="/add"/>">
 
     <label><input type="text" name="name"></label>Имя<br>
 

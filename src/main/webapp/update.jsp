@@ -14,14 +14,14 @@
 <body>
 
 
-<div>Имя: <c:out value="${requestScope.user.name}"/> </div>
-<div>Возраст: <c:out value="${requestScope.user.age}"/> </div>
+<div>Имя: <c:out value="${requestScope.user.name}"/></div>
+<div>Возраст: <c:out value="${requestScope.user.age}"/></div>
 
-<br />
+<br/>
 
-<form method="post" action="<c:url value='/update'/>">
+<form method="post" action="<c:url value="/update"/>">
 
-    <label>Новое имя: <input type="text" name="name" /></label><br>
+    <label>Новое имя: <input type="text" name="name"/></label><br>
 
     <input type="number" hidden name="id" value="${requestScope.user.id}"/>
 

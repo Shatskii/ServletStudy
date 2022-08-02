@@ -20,12 +20,8 @@ public class FilterServlets implements Filter {
         if (o == null) {
             throw new IllegalArgumentException("Invalid object type userMap!");
         } else {
+            System.out.println("Filter!");
             filterChain.doFilter(servletRequest, servletResponse);
         }
-    }
-
-    @Override
-    public void destroy() {
-
     }
 }
